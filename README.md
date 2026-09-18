@@ -53,6 +53,17 @@ npm run preview  # serve that build locally
 
 Node 20 or newer.
 
+### Publishing the demo
+
+The live demo is the `gh-pages` branch, served by GitHub Pages. To publish a new build:
+
+```bash
+npm run build:pages                       # build with the /weather-dashboard/ base path
+git worktree add --orphan -b gh-pages ../wd-pages
+cp -r dist/* ../wd-pages/ && touch ../wd-pages/.nojekyll
+cd ../wd-pages && git add -A && git commit -m "Deploy" && git push -f origin gh-pages
+```
+
 ## How it fits together
 
 ```
