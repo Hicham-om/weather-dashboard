@@ -1,0 +1,27 @@
+{
+  "name": "weather-dashboard",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Weather forecast IOT dashboard built with React and Vite, using live Open-Meteo data.",
+  "author": "Hicham Ouikrim (WYDstudio)",
+  "license": "MIT",
+  "homepage": "https://hicham-om.github.io/weather-dashboard/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hicham-om/weather-dashboard.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.2.0",
+    "vite": "^7.3.6"
+  }
+}
